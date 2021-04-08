@@ -16,7 +16,7 @@ public class Main {
     private static Connection conn = null;
     private static Statement stmt = null;
 
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) {
 
         try{
             Class.forName("org.postgresql.Driver");
