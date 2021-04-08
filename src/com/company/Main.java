@@ -41,8 +41,8 @@ public class Main {
         return conn;
     }
 
-    public static String request(String s) {
-        String sql = "SELECT * FROM words WHERE word = '" + s + "';";
+    public static String request(String word) {
+        String sql = "SELECT * FROM words WHERE word = '" + word + "';";
         ResultSet resultSet = null;
         String res = "";
         try {
