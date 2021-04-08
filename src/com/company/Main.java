@@ -18,36 +18,18 @@ public class Main {
 
     public static void main(String[] args) throws IOException {
 
-
         try{
             Class.forName("org.postgresql.Driver");
-            //conn = DriverManager.getConnection(DB, USER, PASS);
-//            connect();
-//            stmt = conn.createStatement();
-//            ResultSet resultSet;
-
-//            String sql = "SELECT * FROM words";
-//            ResultSet resultSet = stmt.executeQuery(sql);
-
-//            while (resultSet.next()) {
-//                String word = resultSet.getString("word");
-//                String description = resultSet.getString("description");
-//
-//                books.add(new Book(word, description, false));
-//            }
-
-//            resultSet = zapros("ручка");
-
-//            resultSet.close();
-
         }catch(Exception e){
             e.printStackTrace();
         }
+        
         Window win = new Window();
         win.pack();
         win.setSize(800,333);
         win.setVisible(true);
         System.exit(0);
+        
     }
 
     public static Connection connect() {
